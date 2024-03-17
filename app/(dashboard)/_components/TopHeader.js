@@ -7,7 +7,7 @@ const TopHeader = () => {
   return (
     <div className="flex border-b p-5 items-center justify-between md:justify-end">
       <AlignJustify className="md:hidden" />
-      <Image src={"/logo.svg"} className="md:hidden" width={150} height={100} />
+      <Image alt="logo" src={"/logo.svg"} className="md:hidden" width={150} height={100} />
       <UserButton />
     </div>
   );

@@ -29,11 +29,12 @@ const SideNav = () => {
   return (
     <div className="shadow-sm border-r h-full">
       <div className="p-5 border-b">
-        <Image src={"/logo.svg"} width={150} height={100} />
+        <Image alt="logo" src={"/logo.svg"} width={150} height={100} />
       </div>
       <div className="flex flex-col float-left w-full">
         {menuList.map((listItem, idx) => (
           <button
+            key={listItem.id}
             onClick={() => setActiveIdx(idx)}
             className={`flex gap-2 p-4 px-6 hover:bg-gray-100 w-full text-gray-500${
               activeIdx === idx ? "bg-blue-50 text-primary" : null
